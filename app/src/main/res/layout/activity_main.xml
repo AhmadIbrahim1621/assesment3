@@ -1,0 +1,40 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:padding="16dp"
+            android:textSize="24sp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:columnCount="4">
+
+            <Button
+                android:id="@+id/button_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="1" />
+
+            <!-- Tambahkan tombol-tombol angka dan operator lainnya sesuai kebutuhan -->
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/button_calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate" />
+
+    </LinearLayout>
+</layout>
